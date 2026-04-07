@@ -1,0 +1,15 @@
+{
+  "name": "Interview Evaluation Task",
+  "job": {
+    "title": "Data Scientist",
+    "required_skills": ["Machine Learning", "Statistics"],
+    "min_experience": 2
+  },
+  "candidate": {
+    "name": "Bob Data",
+    "skills": ["Python", "Machine Learning", "Statistics"],
+    "experience_years": 3,
+    "projects": ["Churn Prediction Model", "A/B Testing Framework"]
+  },
+  "target_questions": 2
+}

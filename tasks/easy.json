@@ -1,0 +1,15 @@
+{
+  "name": "Resume Screening Task",
+  "job": {
+    "title": "Backend Engineer",
+    "required_skills": ["Python", "SQL"],
+    "min_experience": 3
+  },
+  "candidate": {
+    "name": "Alice Dev",
+    "skills": ["Python", "SQL", "Docker"],
+    "experience_years": 5,
+    "projects": ["Distributed Scheduler", "E-commerce API"]
+  },
+  "target_questions": 1
+}

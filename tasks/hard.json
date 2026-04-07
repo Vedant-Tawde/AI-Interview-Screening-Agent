@@ -1,0 +1,15 @@
+{
+  "name": "Full Hiring Pipeline Task",
+  "job": {
+    "title": "Front End Architect",
+    "required_skills": ["React", "TypeScript", "System Design"],
+    "min_experience": 8
+  },
+  "candidate": {
+    "name": "Charlie Architect",
+    "skills": ["React", "TypeScript", "System Design", "GraphQL"],
+    "experience_years": 10,
+    "projects": ["Micro-frontend Platform", "Design System Core"]
+  },
+  "target_questions": 3
+}

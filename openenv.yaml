@@ -1,0 +1,19 @@
+name: ai-interview-screening
+version: 1.0.0
+description: A multi-stage AI hiring pipeline screening and interview environment.
+entrypoint: my_env.py
+task_dir: tasks/
+action_space:
+  shortlist_candidate: Move candidate from screening to interview.
+  reject_candidate: Reject candidate during screening.
+  ask_question: Ask a technical question during interview.
+  evaluate_answer: Provide a score (0.0-1.0) for a candidate's answer.
+  hire_candidate: Final decision to hire.
+  reject_after_interview: Final decision to reject.
+observation_space:
+  stage: Current stage (screening, interview, evaluation, decision).
+  candidate: Candidate details (only available in screening stage).
+  job: Job requirements.
+  history: Conversation log.
+  last_answer: Most recent candidate response.
+reward_range: [0.0, 1.0]
