@@ -5,10 +5,10 @@ from openai import OpenAI
 from my_env import InterviewEnv, Action, ActionType
 
 def main():
-    # Configuration (Use environment variables for secrets)
-    api_base = os.getenv("API_BASE_URL", "https://router.huggingface.co/v1")
-    model_name = os.getenv("MODEL_NAME", "Qwen/Qwen2.5-72B-Instruct")
-    api_key = os.getenv("HF_TOKEN") # Credentials should be passed via env
+    # Using direct Serverless API endpoint to attempt credit-bypass
+    api_base = os.getenv("API_BASE_URL", "https://api-inference.huggingface.co/v1/")
+    model_name = os.getenv("MODEL_NAME", "meta-llama/Llama-3.2-3B-Instruct")
+    api_key = os.getenv("HF_TOKEN") 
 
     if not api_key:
          print("ERROR: HF_TOKEN environment variable not set. Please provide your Hugging Face token.")
