@@ -5,9 +5,9 @@ from openai import OpenAI
 from my_env import InterviewEnv, Action, ActionType
 
 def main():
-    # Using direct Serverless API endpoint to attempt credit-bypass
-    api_base = os.getenv("API_BASE_URL", "https://api-inference.huggingface.co/v1/")
-    model_name = os.getenv("MODEL_NAME", "meta-llama/Llama-3.2-3B-Instruct")
+    # Standard production configuration for Hugging Face Router
+    api_base = os.getenv("API_BASE_URL", "https://router.huggingface.co/v1")
+    model_name = os.getenv("MODEL_NAME", "Qwen/Qwen2.5-72B-Instruct")
     api_key = os.getenv("HF_TOKEN") 
 
     if not api_key:
